@@ -143,12 +143,12 @@ const QuotationList = ({ userRole, userId, labId }) => {
 
       {quotations.length === 0 ? (
         <div className="bg-[#F5F9FD] p-8 rounded-lg text-center border border-[#BCE0FD]">
-          <p className="text-[#0B3861]/80 text-lg">No quotations found matching your criteria.</p>
+          <p className="text-[#0B3861]/80 text-lg">No quotations found fo royur profile </p>
         </div>
       ) : (
         <div className="grid gap-6 sm:grid-cols-2 grid-cols-1 ">
           {quotations.map((quotation) => (
-            <div key={quotation._id} className="flex">
+            <div key={quotation._id} className='flex'>
               <QuotationCard
                 quotation={quotation}
                 userRole={userRole}
